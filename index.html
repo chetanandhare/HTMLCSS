@@ -1,14 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- tells browser this is HTML5 -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tutorial</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GCEY</title> <!-- Appears on browser tab -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Search Engine Optimization -->
+    <meta name="keywords" content="Government College of Engineering">
+    <meta name="description" content="Government College of Engineering - Yavatmal">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <!-- Connects CSS file to this HTML file -->
+    <link rel="stylesheet" href="mystyles.css">
+    <style>    
+    </style>
 </head>
+
 <body>
-    <p>This is div demo</p>
-    <div id="box1"> </div>
-    <div id="box2"> </div>
-</body> 
+<!-- TOP BAR -->
+<!-- TOP BAR -->
+<div class="top-bar">
+    <a href="#">Alumni</a>
+    <a href="#">Tenders</a>
+    <a href="#">Notices/Circulars</a>
+    <a href="#" onclick="changeFont(-2)">-A</a>
+    <a href="#" onclick="resetFont()">A</a>
+    <a href="#" onclick="changeFont(2)">+A</a>
+     <!-- Google Translate here -->
+       <!-- <div id="google_translate_element"></div> -->
+    <a href="#">📞 Contact Us</a>
+</div>
+
+<!-- HEADER TOP Part-->
+ <div class="container-fluid" style="background: white;">
+    <div class="row align-items-center">
+
+        <!-- Logo -->
+        <div class="col-auto">
+            <img src="img/logo.png" class="logo">
+        </div>
+
+        <!-- Text -->
+        <div class="col text-start">
+            <h2 class="mb-1 college-name">
+                Government College of Engineering, Yavatmal
+            </h2> 
+            <p class="mb-0 address">
+                Naringe Nagar, Pimpalgaon, Yavatmal,<br>
+                Maharashtra 445001
+            </p>
+        </div>
+        <!-- Search Option -->
+        <div class="col d-flex justify-content-end">
+        <script src="https://cse.google.com/cse.js?cx=003701022384518758860:o7vsnwrq790"> </script>
+        <div class="gcse-search"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav w-100 justify-content-between">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Administration</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Placement</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- SLIDER -->
+<div id="mainSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+
+  <!-- Indicators (dots) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Images -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/1.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/2.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/3.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/4.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/5.jpg" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/6.jpg" class="d-block w-100">
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- END SLIDER -->
+
+<!-- MAIN SECTION -->
+<div class="main">
+
+    <!-- LEFT: Departments -->
+    <div class="left">
+        <h3>Departments</h3>
+
+        <div class="dept-card">
+            <img src="it.jpg">
+            <p>IT</p>
+        </div>
+
+        <div class="dept-card">
+            <img src="mca.jpg">
+            <p>MCA</p>
+        </div>
+
+        <div class="dept-card">
+            <img src="civil.jpg">
+            <p>Civil</p>
+        </div>
+
+        <div class="dept-card">
+            <img src="mech.jpg">
+            <p>Mechanical</p>
+        </div>
+
+    </div>
+
+    <!-- CENTER: Info -->
+    <div class="center">
+        <h3>College Information</h3>
+        <p>
+            Government College of Engineering, Karad is one among seven engineering 
+            colleges established by State Government of Maharashtra. It focuses on 
+            delivering quality technical education and innovation.
+        </p>
+    </div>
+
+    <!-- RIGHT: Notice + Procurement -->
+    <div class="right">
+
+        <div class="tabs">
+            <button class="active">Notices</button>
+            <button>Procurement</button>
+        </div>
+
+        <div class="notice-box">
+            <ul>
+                <li>Exam Revaluation Notice</li>
+                <li>Conference on AI</li>
+                <li>Scholarship Update</li>
+                <li>Eligibility Registration</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+<!-- Your Font Control Script -->
+  <script>
+let currentSize = 16;
+
+function changeFont(value) {
+    currentSize += value;
+    document.documentElement.style.fontSize = currentSize + "px";
+}
+
+function resetFont() {
+    currentSize = 16;
+    document.documentElement.style.fontSize = currentSize + "px";
+}
+</script>
+
+</body>
 </html>

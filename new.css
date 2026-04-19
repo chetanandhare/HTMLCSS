@@ -1,0 +1,29 @@
+.logo {
+    height: 80px;       /* desktop */
+    width: auto;
+}
+
+.college-name {
+    font-size: 1.8rem;  /* smaller */
+    font-weight: 500;
+}
+
+.address {
+    font-size: 1rem;
+}
+
+/* 📱 Mobile adjustment */
+@media (max-width: 768px) {
+
+    .logo {
+        height: 50px;
+    }
+
+    .college-name {
+        font-size: 1.2rem;
+    }
+
+    .address {
+        font-size: 0.9rem;
+    }
+}
